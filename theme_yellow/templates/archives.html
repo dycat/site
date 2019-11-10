@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="article_list padding_nav">
+{% for article in articles %}
+	<li class="article_list_item"><span>{{ article.date|strftime('%Y %m %d ') }}</span><a href="{{ SITEURL }}/{{ article.slug }}">{{ article.title}}</a></li>
+{% endfor %}
+</div>
+{% endblock %}
