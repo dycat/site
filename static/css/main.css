@@ -119,7 +119,7 @@ article{
 	font-weight: 200;
 	text-decoration: none;
 	text-align: left;
-	padding-left: 13em;
+	/* padding-left: 13em; */
 }
 
 .article_list{
