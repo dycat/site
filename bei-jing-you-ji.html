@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>北京游记 </title>
+<title>北京游记</title>
+<link rel="stylesheet" type="text/css" href="./static/css/article_page.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="./static/css/main.css">
-	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
-	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+		integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 	<meta charset="utf-8">
 </head>
+
 <body>
-	<div class='container'>
-		<nav id="nav" class="pure-menu pure-menu-horizontal ">
-			<div id="logo" class="logo-card">
+	<div class='wrap'>
+		<nav class="nav-bar">
+			<div class="logo-card">
 				<h1 id="title">Logfok</h1>
 			</div>
-		<ul class="pure-menu-list menu_list">
-		<li class="pure-menu-item"><a class="menu_item" href=".">Home</a></li>
-		<li class="pure-menu-item"><a class="menu_item"  href="./archives">Article List</a></li>
-		<li class="pure-menu-item"><a class="menu_item"  href="./pages/projects">Projects</a></li>
-		<li class="pure-menu-item"><a class="menu_item"  href="./pages/about">About</a></li>
-	</ul>	
-	</nav>
-	
-	<div>
-<div class="padding_nav">
-	<h2 class="article-page-title">北京游记</h2>
-		<article>
-			2016 01 16 
-			
-			Review, Chinese_posts
-			<div class="article_page_content">
-				<h2>一 北京大学</h2>
+			<ul class="nav_row">
+				<li><a class="nav_item" href=".">Home</a></li>
+				<li><a class="nav_item" href="./archives">Article List</a></li>
+				<li><a class="nav_item" href="./pages/projects">Projects</a></li>
+				<li><a class="nav_item" href="./pages/about">About</a></li>
+			</ul>
+		</nav>
+
+		<div class="article-area">
+
+<h2 class="article-page-title">北京游记</h2>
+<article class="article-page">
+	<div class="article_page_meta">
+		2016 01 16 
+		
+		Review, Chinese_posts
+	</div>
+	<div class="article_page_content">
+		<h2>一 北京大学</h2>
 <p>第二天陪友人去中关村办完事，顺道进入北大溜达了一圈。</p>
 <p>在北大门口看到围栏，于是问保安小哥现在是否可以进入参观。小哥先是<strong>敬礼</strong>，柔声说，可以，刷身份证就可以了。门卫刷了我们中一人的证件，了解到我们同行，问了一句参观何处就放行了。</p>
 <p>以前从没想过要来这里参观，更没对她抱有多大兴趣。只是隐约了解到关于这个校园这个学校的许多事，知道学校里面有很多大学者。</p>
@@ -47,66 +53,60 @@
 <p>再向西是含经堂，乾隆时兴建。堂中石柱较前面宫殿更粗，地基也更高，可想见其宏伟。</p>
 <p>再往西可见福海，由此进入了圆明园地界。地图上看去，圆明园规模比前面两个园加起来还要大三分之一。如此规模，已然是人在景中走，园的另一边还是园的境况了。其后闲逛许久，险些迷路其中。</p>
 <p>圆明园的确集合了古人有关建筑与自然的全部想象。</p>
-			<div>
-			<ul>
-					<li>
-						<a href="./jia-ju-zhi-ce-suo.html"  style="color: #7B6C00">
-							Next: 家居之廁所
-						</a>
-					</li>
-			   </ul>
-		
+	</div>
+	<ul class="article_pres">
+		<li class="next_article">
+			<a href="./jia-ju-zhi-ce-suo.html">
+				Next: 家居之廁所
+			</a>
+		</li>
+	</ul>
+</article>
+
+
+
+
+
+
 		</div>
-			</div>
-
-		</article>
-		
-</div>
-
-
-
-			
-
-	</div>	
-	<footer class="pure-g">
-		<div class="pure-u-1">
-			<p>Copyright @ 2019 by Ian  Powered by Pelican</p>
-			
-		</div>
-	</footer>
+		<footer>
+			<p>Copyright @ 2020 by Ian Powered by Pelican</p>
+		</footer>
 	</div>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134156222-1">
-		</script>
+	</script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
 
-	gtag('config', 'UA-134156222-1');
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-134156222-1');
 	</script>
 
 	<script type="text/javascript">
-		
-
-		window.addEventListener('scroll',(e)=>{
+		window.addEventListener('scroll', (e) => {
 			let logo = document.getElementById('logo')
 			let title = document.getElementById('title')
 			let nav = document.getElementById('nav')
 			if (window.scrollY > 5) {
-			logo.classList.add('pure-menu-heading')
-			logo.classList.remove('logo_card')
-			logo.classList.add('logo_small')
-			title.classList.add('title_small')
-			nav.classList.add('nav_small')
-			}else{
-			logo.classList.remove('pure-menu-heading')
-			logo.classList.remove('logo_small')
-			logo.classList.add('logo_card')
-			title.classList.remove('title_small')
-			nav.classList.remove('nav_small')
+				logo.classList.add('pure-menu-heading')
+				logo.classList.remove('logo_card')
+				logo.classList.add('logo_small')
+				title.classList.add('title_small')
+				nav.classList.add('nav_small')
+			} else {
+				logo.classList.remove('pure-menu-heading')
+				logo.classList.remove('logo_small')
+				logo.classList.add('logo_card')
+				title.classList.remove('title_small')
+				nav.classList.remove('nav_small')
 			}
 		})
 	</script>
 </body>
+
 </html>

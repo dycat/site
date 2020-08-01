@@ -1,80 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Logfok - Review category</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
-	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
-	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+		integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 	<meta charset="utf-8">
 </head>
+
 <body>
-	<div class='container'>
-		<nav id="nav" class="pure-menu pure-menu-horizontal ">
-			<div id="logo" class="logo-card">
+	<div class='wrap'>
+		<nav class="nav-bar">
+			<div class="logo-card">
 				<h1 id="title">Logfok</h1>
 			</div>
-		<ul class="pure-menu-list menu_list">
-		<li class="pure-menu-item"><a class="menu_item" href="..">Home</a></li>
-		<li class="pure-menu-item"><a class="menu_item"  href="../archives">Article List</a></li>
-		<li class="pure-menu-item"><a class="menu_item"  href="../pages/projects">Projects</a></li>
-		<li class="pure-menu-item"><a class="menu_item"  href="../pages/about">About</a></li>
-	</ul>	
-	</nav>
-	
-	<div>
-	<div class="pure-g">
-		<div class="pure-u-1 padding_nav">
-			<h2 class="index-column-name">Latest Articles</h2>
-		</div>
-		
-		<div class="pure-u-1-3 pure-u-md-1 article_card">
-			<h2><a class="article_title" href="../a-glance-at-investing-index-funds">A glance at investing index funds</a></h2>
-			2019 11 10 
-			Review
-			<h3>Why index funds?</h3>
-<p>When I learned financial class at my university, they only teach the rule...		
-		</div>
+			<ul class="nav_row">
+				<li><a class="nav_item" href="..">Home</a></li>
+				<li><a class="nav_item" href="../archives">Article List</a></li>
+				<li><a class="nav_item" href="../pages/projects">Projects</a></li>
+				<li><a class="nav_item" href="../pages/about">About</a></li>
+			</ul>
+		</nav>
+
+		<div class="article-area">
+
+<h2 class="index-column-name">Latest Articles</h2>
+<div class="articles">
+	<div class="article_card">
+		<h2><a class="article_title" href="../a-glance-at-investing-index-funds">A glance at investing index funds</a></h2>
+		2019 11 10 
+		Review
+		<h3>Why index funds?</h3>
+<p>When I learned financial class at my university, they only teach the rule...
 	</div>
-	</div>	
-	<footer class="pure-g">
-		<div class="pure-u-1">
-			<p>Copyright @ 2019 by Ian  Powered by Pelican</p>
-			
+</div>
 		</div>
-	</footer>
+		<footer>
+			<p>Copyright @ 2020 by Ian Powered by Pelican</p>
+		</footer>
 	</div>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134156222-1">
-		</script>
+	</script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
 
-	gtag('config', 'UA-134156222-1');
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-134156222-1');
 	</script>
 
 	<script type="text/javascript">
-		
-
-		window.addEventListener('scroll',(e)=>{
+		window.addEventListener('scroll', (e) => {
 			let logo = document.getElementById('logo')
 			let title = document.getElementById('title')
 			let nav = document.getElementById('nav')
 			if (window.scrollY > 5) {
-			logo.classList.add('pure-menu-heading')
-			logo.classList.remove('logo_card')
-			logo.classList.add('logo_small')
-			title.classList.add('title_small')
-			nav.classList.add('nav_small')
-			}else{
-			logo.classList.remove('pure-menu-heading')
-			logo.classList.remove('logo_small')
-			logo.classList.add('logo_card')
-			title.classList.remove('title_small')
-			nav.classList.remove('nav_small')
+				logo.classList.add('pure-menu-heading')
+				logo.classList.remove('logo_card')
+				logo.classList.add('logo_small')
+				title.classList.add('title_small')
+				nav.classList.add('nav_small')
+			} else {
+				logo.classList.remove('pure-menu-heading')
+				logo.classList.remove('logo_small')
+				logo.classList.add('logo_card')
+				title.classList.remove('title_small')
+				nav.classList.remove('nav_small')
 			}
 		})
 	</script>
 </body>
+
 </html>
