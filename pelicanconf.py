@@ -6,6 +6,8 @@ AUTHOR = 'ian'
 SITENAME = 'Logfok'
 SITEURL = 'https://dyang504.github.io/site'
 
+# # can be useful in development, but set to False when you're ready to publish
+RELATIVE_URLS = True
 
 PATH = 'content'
 
@@ -35,9 +37,6 @@ LINKS = (('Pelican', 'http://getpelican.com/'),)
 SOCIAL = (('You can add links in your config file', '#'),)
 
 DEFAULT_PAGINATION = 10
-
-# Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
 
 GOOGLE_ANALYTICS = "UA-134156222-1"
 

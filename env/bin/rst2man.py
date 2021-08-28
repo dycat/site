@@ -1,4 +1,4 @@
-#!/Users/yang/Documents/site/env/bin/python3.7
+#!/Users/yang/Documents/site/env/bin/python3
 
 # Author: 
 # Contact: grubert@users.sf.net

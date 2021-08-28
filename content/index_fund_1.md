@@ -1,6 +1,6 @@
 Title: A glance at investing index funds 
-Date: 2016-4-16
-Category: Review, Chinese_posts
+Date: 2019-11-10
+Category: Review
 
 ### Why index funds?
 

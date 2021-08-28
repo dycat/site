@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>卜算子</title>
+<!-- <link rel="stylesheet" type="text/css" href="./static/css/article_page.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./static/css/tailwind.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./static/css/main.css"> -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" -->
+		<!-- integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous"> -->
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div class='wrap'>
+		<nav class="nav-bar bg-yellow-300 grid justify-center">
+			<div class="logo-card grid my-6 justify-items-center">
+				<h1 id="title" class="font-mono text-2xl text-center bg-white w-28 p-1 rounded-2xl">Logfok</h1>
+			</div>
+			<ul class="nav_row nav_row flex md:gap-x-20 py-3 gap-x-5">
+				<li><a class="nav_item" href=".">Home</a></li>
+				<li><a class="nav_item" href="./archives">Article List</a></li>
+				<li><a class="nav_item" href="./pages/projects">Projects</a></li>
+				<li><a class="nav_item" href="./pages/about">About</a></li>
+			</ul>
+		</nav>
+
+		<div class="article-area grid justify-items-center">
+
+<h2 class="article-page-title text-2xl p-6 font-mono font-bold">卜算子</h2>
+
+<article class="article-page grid justify-items-center">
+	<div class="article_page_meta font-thin text-center p-2">
+		2020 05 19 
+		
+		Chinese poetry
+	</div>
+	<div class="article_page_content m-2 md:w-9/12 text-lg font-light text-justify">
+		<p>独卧久无眠，坐立观书影。
+人事依稀在目前，情理难隽永。</p>
+<p>俗务竞芳华，纷扰驱幽境。
+旧病新殇困顿时，最羡悠游景。</p>
+	</div>
+
+	<ul class="article_pres grid grid-cols-2 w-9/12 font-bold= ">
+		<li class="hover:text-blue-500">
+			<a href="./chang-xiang-si.html">
+				Previous: 长相思
+			</a>
+		</li>
+	</ul>
+</article>
+
+
+
+
+
+
+		</div>
+		<footer>
+			<p class="font-extralight text-center py-6" >Copyright @ 2021 by Ian Powered by Pelican</p>
+		</footer>
+	</div>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134156222-1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-134156222-1');
+	</script>
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', (e) => {
+			let logo = document.getElementById('logo')
+			let title = document.getElementById('title')
+			let nav = document.getElementById('nav')
+			if (window.scrollY > 5) {
+				logo.classList.add('pure-menu-heading')
+				logo.classList.remove('logo_card')
+				logo.classList.add('logo_small')
+				title.classList.add('title_small')
+				nav.classList.add('nav_small')
+			} else {
+				logo.classList.remove('pure-menu-heading')
+				logo.classList.remove('logo_small')
+				logo.classList.add('logo_card')
+				title.classList.remove('title_small')
+				nav.classList.remove('nav_small')
+			}
+		})
+	</script>
+</body>
+
+</html>

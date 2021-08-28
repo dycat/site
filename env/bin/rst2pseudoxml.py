@@ -1,4 +1,4 @@
-#!/Users/yang/Documents/site/env/bin/python3.7
+#!/Users/yang/Documents/site/env/bin/python3
 
 # $Id: rst2pseudoxml.py 4564 2006-05-21 20:44:42Z wiemann $
 # Author: David Goodger <goodger@python.org>
