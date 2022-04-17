@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>The Inspireboard: My First iOS App goes into App Store</title>
+<!-- <link rel="stylesheet" type="text/css" href="./static/css/article_page.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./static/css/tailwind.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./static/css/main.css"> -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" -->
+		<!-- integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous"> -->
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div class='wrap'>
+		<nav class="nav-bar bg-yellow-300 grid justify-center">
+			<div class="logo-card grid my-6 justify-items-center">
+				<h1 id="title" class="font-mono text-2xl text-center bg-white w-28 p-1 rounded-2xl">Logfok</h1>
+			</div>
+			<ul class="nav_row nav_row flex md:gap-x-20 py-3 gap-x-5">
+				<li><a class="nav_item" href=".">Home</a></li>
+				<li><a class="nav_item" href="./archives">Article List</a></li>
+				<li><a class="nav_item" href="./pages/projects">Projects</a></li>
+				<li><a class="nav_item" href="./pages/about">About</a></li>
+			</ul>
+		</nav>
+
+		<div class="article-area grid justify-items-center">
+
+<h2 class="article-page-title text-2xl p-6 font-mono font-bold">The Inspireboard: My First iOS App goes into App Store</h2>
+
+<article class="article-page grid justify-items-center">
+	<div class="article_page_meta font-thin text-center p-2">
+		2022 04 17 
+		
+		iOS Dev
+	</div>
+	<div class="article_page_content m-2 md:w-9/12 text-lg font-light text-justify">
+		<p>My App development learning start long time ago. But it’s never become a real App. As I’m a slow learner and self-taught, or as I once think too much about perfection. Here are some take away from the release of Inspireboard.</p>
+<h2>MVP, MVP, MVP</h2>
+<p>With the making of any software, the most core problem is keep the product simple and focus on the key feature. My first attempt to make an iOS App was in 2017. The idea I come up with is a weather App — as all the iOS beginner would do. I made network API call functional, I made App seem fancy. But it takes two long, I lost my interest. I also made some concept App in 2020 and 2021, which have be failed without even complete.</p>
+<p>Meanwhile, I’ve learned Web App development, git usage. I’m more comfortable with writing programs. Most important, I know the need for starting small and build up recursively. Therefore, I decide to make a simplistic App named Inspireboard which display daily quote in the widget. </p>
+<p>This time, at least, I successfully coding this App. It’s no longer a toy in my Xcode.</p>
+<h2>Test - your friend</h2>
+<p>The App ends up owns thousand line of code. I become frustrated. And even lost points when debug codes. Finally, one night, some detailed test added to the code base and comments summarized the purposes of class. After that, I fixed knowing bug. </p>
+<p>It could possible that your product has far more lines of code than mine. The tests back up you, gives you confidence. And this could be a wealth in your programming journey.</p>
+<p>My first App doesn’t has very high coverage, it’s a pity. However, I attempted to add test for the model and help functions as more as possible. I’ve add UI test to every feature I’m coding. </p>
+<p>The ultimate goal of mine is to completely follow TDD (Test-driven development). TDD not only helps shipping safer code, but also is the fundament of Continuous Integration and Continuous Delivery. As a result, you could automate almost every aspect of iOS development.</p>
+<h2>Design first, code after</h2>
+<p>In the middle of coding the widgets, I lost when positioning the elements. Then, I decide to open Figma and draw them first. I add colors and different variation. The coding process now become less pressure and more fun.</p>
+<p>The design could decrease pressure by isolate the designing and coding step. If you not over do it, designing actually helps. But, as we are follow the MVP rule, just minimal design is appropriate.</p>
+<h2>Conclusion</h2>
+<p>Now, I am realized, release a product only means the start of something. And I would not say it near success. But I finally complete the goal I make years ago and pretty enjoy the process.</p>
+<p>If you read to this, please considering have a look of my App — <a href="https://apple.co/3rsJVqj">Inspireboard</a> and give it a try. Thank you very much.</p>
+<p><a href="https://apps.apple.com/us/app/inspireboard/id1616648205?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1649894400&h=0bef9cd8b3dc9079d324c536bd9f3d77" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a></p>
+	</div>
+
+	<ul class="article_pres grid grid-cols-2 w-9/12 font-bold= ">
+		<li class="hover:text-blue-500">
+			<a href="./bu-suan-zi.html">
+				Previous: 卜算子
+			</a>
+		</li>
+	</ul>
+</article>
+
+
+
+
+
+
+		</div>
+		<footer>
+			<p class="font-extralight text-center py-6" >Copyright @ 2021 by Ian Powered by Pelican</p>
+		</footer>
+	</div>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134156222-1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-134156222-1');
+	</script>
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', (e) => {
+			let logo = document.getElementById('logo')
+			let title = document.getElementById('title')
+			let nav = document.getElementById('nav')
+			if (window.scrollY > 5) {
+				logo.classList.add('pure-menu-heading')
+				logo.classList.remove('logo_card')
+				logo.classList.add('logo_small')
+				title.classList.add('title_small')
+				nav.classList.add('nav_small')
+			} else {
+				logo.classList.remove('pure-menu-heading')
+				logo.classList.remove('logo_small')
+				logo.classList.add('logo_card')
+				title.classList.remove('title_small')
+				nav.classList.remove('nav_small')
+			}
+		})
+	</script>
+</body>
+
+</html>
