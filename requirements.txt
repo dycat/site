@@ -5,7 +5,7 @@
 #    pipenv lock --requirements
 #
 
--i https://pypi.org/simple
+-i https://pypi.org/simple/
 blinker==1.4
 docutils==0.15.2
 feedgenerator==1.9
@@ -13,8 +13,8 @@ ghp-import==0.5.5
 jinja2==2.11.3
 markdown==3.1.1
 markupsafe==1.1.1
-pelican==4.1.2
-pygments==2.4.2
+pelican[markdown]==4.5.0
+pygments==2.7.4
 python-dateutil==2.8.0
 pytz==2019.2
 setuptools==62.1.0; python_version >= '3.7'
