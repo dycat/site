@@ -4,18 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-blinker = "==1.4"
-docutils = "==0.15.2"
-feedgenerator = "==1.9"
-ghp-import = "==0.5.5"
+blinker = "*"
+docutils = "*"
+feedgenerator = "*"
+ghp-import = "*"
 pelican = {extras = ["markdown"], version = "*"}
-python-dateutil = "==2.8.0"
-pytz = "==2019.2"
-six = "==1.12.0"
-unidecode = "==1.1.1"
-Markdown = "==3.1.1"
-MarkupSafe = "==1.1.1"
-Pygments = "==2.4.2"
+python-dateutil = "*"
+pytz = "*"
+six = "*"
+unidecode = "*"
+Markdown = "*"
+MarkupSafe = "*"
+Pygments = "*"
 jinja2 = "*"
 
 [dev-packages]
