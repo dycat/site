@@ -22,14 +22,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-      - name: Install Pipenv
-        run: pipx install pipenv
-      
       - name: Setup python
         uses: actions/setup-python@v3.1.2
         with: 
           python-version: '3.10'
           cache: 'pipenv'
+      
+      - name: Install Pipenv
+        run: pipx install pipenv
 
       - name: Install dependencies
         run: pipenv install
