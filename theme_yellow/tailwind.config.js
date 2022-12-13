@@ -1,16 +1,17 @@
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-  purge: ['./templates/*.html'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./templates/*.html'],
   theme: {
-    extend: {},
-    // colors: {
-    //   yellow: {
-    //     light: 'FFDE00',
-    //   }
-    // },
-  },
-  variants: {
-    extend: {},
+    extend: {
+      colors: {
+        green: colors.emerald,
+        yellow: colors.amber,
+        purple: colors.violet,
+        gray: colors.neutral,
+      }
+    },
   },
   plugins: [require('@tailwindcss/typography'),],
 }
