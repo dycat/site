@@ -6,6 +6,7 @@
 	{% endblock %}
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/static/css/tailwind.css">
+	<script src="https://kit.fontawesome.com/546a1ed5cf.js" crossorigin="anonymous"></script>
 	<!-- <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/static/css/main.css"> -->
 	<!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" -->
 		<!-- integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous"> -->
@@ -24,14 +25,15 @@
 <body>
 	<div class='wrap'>
 		<nav class="nav-bar bg-yellow-300 grid justify-center">
-			<div class="logo-card grid my-6 justify-items-center">
-				<h1 id="title" class="font-mono text-2xl text-center bg-white w-28 p-1 rounded-2xl">{{ SITENAME }}</h1>
+			<div class="logo-card grid my-6 justify-items-center grid-cols-3 gap-4">
+					<i class="fa-solid fa-fish text-2xl py-6"></i>
+					<h1 id="title" class="font-mono text-2xl text-center bg-white w-28 p-1 rounded-2xl"> {{ SITENAME }}</h1>
 			</div>
 			<ul class="nav_row nav_row flex md:gap-x-20 py-3 gap-x-5">
-				<li><a class="nav_item" href="{{ SITEURL }}">Home</a></li>
-				<li><a class="nav_item" href="{{ SITEURL }}/archives">Article List</a></li>
-				<li><a class="nav_item" href="{{ SITEURL }}/pages/projects">Projects</a></li>
-				<li><a class="nav_item" href="{{ SITEURL }}/pages/about">About</a></li>
+				<li><i class="fa-solid fa-house"></i><a class="nav_item" href="{{ SITEURL }}"> Home </a></li>
+				<li><i class="fa-solid fa-newspaper"></i><a class="nav_item" href="{{ SITEURL }}/archives"> Article List </a></li>
+				<li><i class="fa-solid fa-list"></i><a class="nav_item" href="{{ SITEURL }}/pages/projects"> Projects </a></li>
+				<li><i class="fa-solid fa-address-card"></i><a class="nav_item" href="{{ SITEURL }}/pages/about"> About </a></li>
 			</ul>
 		</nav>
 
