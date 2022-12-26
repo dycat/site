@@ -15,14 +15,53 @@ SITEURL = 'https://dyang504.github.io/site'
 # RELATIVE_URLS = False
 
 
-
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 
 DELETE_OUTPUT_DIRECTORY = True
 
-# Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+AUTHOR = 'ian'
+SITENAME = 'Logfok'
+
+# # can be useful in development, but set to False when you're ready to publish
+RELATIVE_URLS = True
+
+PATH = 'content'
+
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['neighbors']
+
+THEME = 'theme_yellow'
+THEME_STATIC_DIR = 'static'
+THEME_STATIC_PATHS = ['static']
+CSS_FILE = 'main.css'
+
+TIMEZONE = 'Asia/Chongqing'
+
+DEFAULT_LANG = 'en'
+
+# Blogroll
+LINKS = (('Pelican', 'http://getpelican.com/'),)
+
+# Social widget
+SOCIAL = (('You can add links in your config file', '#'),)
+
+DEFAULT_PAGINATION = 10
+
+GOOGLE_ANALYTICS = "UA-134156222-1"
+
+GOOGLE_ANALYTICS_UNIVERSAL_PROPERTY = 'auto'
+
+STATIC_PATHS=[
+    'images',
+    'extra',
+]
+
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME':{'path':'CNAME'},
+}
+
+TYPOGRIFY = True

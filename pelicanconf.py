@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'ian'
 SITENAME = 'Logfok'
-SITEURL = 'https://dyang504.github.io/site'
+# SITEURL = 'https://dyang504.github.io/site'
 
 # # can be useful in development, but set to False when you're ready to publish
 RELATIVE_URLS = True

@@ -35,7 +35,7 @@ jobs:
         run: pipenv install
         
       - name: Build website
-        run: pipenv run make html
+        run: pipenv run make publish
         
       - name: Deploy to gh-pages
         uses: nelsonjchen/gh-pages-pelican-action@0.1.5
