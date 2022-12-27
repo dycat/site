@@ -6,6 +6,7 @@
 	{% endblock %}
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/static/css/tailwind.css">
+	<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 	<script src="https://kit.fontawesome.com/546a1ed5cf.js" crossorigin="anonymous"></script>
 	<!-- <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/static/css/main.css"> -->
 	<!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" -->
@@ -30,10 +31,10 @@
 					<h1 id="title" class="font-mono text-2xl text-center bg-white w-28 p-1 rounded-2xl"> {{ SITENAME }}</h1>
 			</div>
 			<ul class="nav_row nav_row flex md:gap-x-20 py-3 gap-x-5">
-				<li><i class="fa-solid fa-house"></i><a class="nav_item" href="{{ SITEURL }}"> Home </a></li>
-				<li><i class="fa-solid fa-newspaper"></i><a class="nav_item" href="{{ SITEURL }}/archives"> Article List </a></li>
-				<li><i class="fa-solid fa-list"></i><a class="nav_item" href="{{ SITEURL }}/pages/projects"> Projects </a></li>
-				<li><i class="fa-solid fa-address-card"></i><a class="nav_item" href="{{ SITEURL }}/pages/about"> About </a></li>
+				<li><ion-icon name="home"></ion-icon><a class="nav_item" href="{{ SITEURL }}"> Home </a></li>
+				<li><ion-icon name="reader"></ion-icon><a class="nav_item" href="{{ SITEURL }}/archives"> Article List </a></li>
+				<li><ion-icon name="albums"></ion-icon><a class="nav_item" href="{{ SITEURL }}/pages/projects"> Projects </a></li>
+				<li><ion-icon name="person"></ion-icon><a class="nav_item" href="{{ SITEURL }}/pages/about"> About </a></li>
 			</ul>
 		</nav>
 
