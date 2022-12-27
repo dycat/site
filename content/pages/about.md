@@ -1,6 +1,6 @@
 title: About
 
-I'm Ian, an inovator, on the way to individual developer.
+I'm Ian, an inovator, on the way to be an individual developer.
 
 You can find me on:
 
