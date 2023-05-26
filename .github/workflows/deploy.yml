@@ -37,9 +37,9 @@ jobs:
       - name: Build website
         run: pipenv run make publish
         
-      # - name: Deploy to gh-pages
-      #   uses: nelsonjchen/gh-pages-pelican-action@0.1.10
-      #   env: 
-      #     GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Deploy to gh-pages
+        uses: bimbimprasetyoafif/pelican-simple@v1
+        env: 
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           
         
