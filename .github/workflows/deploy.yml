@@ -18,10 +18,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      - name: Set safe.directory
-        run: git config --global --add safe.directory /github/workspace/output
-        
+    steps:       
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
@@ -41,7 +38,7 @@ jobs:
         run: pipenv run make publish
         
       - name: Deploy to gh-pages
-        uses: nelsonjchen/gh-pages-pelican-action@0.1.5
+        uses: nelsonjchen/gh-pages-pelican-action@0.1.10
         env: 
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           
