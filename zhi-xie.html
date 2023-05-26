@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./static/css/tailwind.css">
+	<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+	<script src="https://kit.fontawesome.com/546a1ed5cf.js" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-59S6FS0668"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-59S6FS0668');
+	</script>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div class='wrap'>
+		<nav class="nav-bar bg-yellow-300 grid justify-center">
+			<div class="logo-card grid my-6 justify-items-center gap-4">
+				<h1 id="title" class="font-mono text-2xl text-center bg-white w-28 p-1 rounded-2xl"> Logfok</h1>
+				<i class="fa-solid fa-fish text-2xl py-6"></i>
+			</div>
+			<ul class="nav_row nav_row flex md:gap-x-20 py-3 gap-x-5">
+				<li><ion-icon name="home"></ion-icon><a class="nav_item" href="."> Home </a></li>
+				<li><ion-icon name="reader"></ion-icon><a class="nav_item" href="./archives"> Article List </a></li>
+				<li><ion-icon name="albums"></ion-icon><a class="nav_item" href="./pages/projects"> Projects </a></li>
+				<li><ion-icon name="person"></ion-icon><a class="nav_item" href="./pages/about"> About </a></li>
+			</ul>
+		</nav>
+
+		<div class="article-area grid justify-items-center">
+
+<h2 class="article-page-title text-2xl p-6 font-mono font-bold">致谢</h2>
+
+<article class="article-page grid justify-items-center">
+	<div class="article_page_meta font-thin text-center p-2">
+		2017 05 20 
+		
+		Review, Chinese_posts
+	</div>
+	<div class="prose article_page_content m-2 md:w-9/12 text-lg font-light text-justify">
+		<p>余甲午年入学，至今三载。盖愚非宝树，初，未期际遇，但求一清净地耳。然至此天宝之地，楚材之乡，飨山麓之森森，绝凡尘于咫尺，纳万千英俊于一校，又有师者大家倾授智识。叹大学之道，得乎于此矣！</p>
+<p>修学于斯，习传播之道，知经济之术，糅数科之法，成经世之学。与鸿儒谈笑，共君子畅游。羡读书如伟桐师兄者，叹勤勉如赵顺之人，惊性天如程远、弘烜者。远道之大家，非止于朱张，讲学之风气，不输于洙泗。凡时事针砭，格物致知者，进则穷人事天地之变，退则成栋梁肱骨之才。</p>
+<p>愚感念良久，精思傅会，倾尽所学，以经年之功，属实证之文。然改之又改，未免纰漏。</p>
+	</div>
+
+	<ul class="article_pres grid grid-cols-2 w-9/12 font-bold= ">
+		<li class="hover:text-blue-500">
+			<a href="./lun-xian-dai-shi-jue-wen-hua-yan-jiu-hui-guan-yu-ya-wen-hua-qun-ti-te-zhi-de-an-li-yan-jiu.html">
+				Previous: 论《现代视觉文化研究会》关于亚文化群体特质的案例研究
+			</a>
+		</li>
+		<li class="next_article text-right hover:text-blue-500">
+			<a href="./an-shen-li-ming-ji.html">
+				Next: 安身立命记
+			</a>
+		</li>
+	</ul>
+</article>
+
+		</div>
+		<footer>
+			<p class="font-extralight text-center py-6" >Copyright @2019-2023 by Ian Powered by Pelican</p>
+		</footer>
+	</div>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134156222-1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-134156222-1');
+	</script>
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', (e) => {
+			let logo = document.getElementById('logo')
+			let title = document.getElementById('title')
+			let nav = document.getElementById('nav')
+			if (window.scrollY > 5) {
+				logo.classList.add('pure-menu-heading')
+				logo.classList.remove('logo_card')
+				logo.classList.add('logo_small')
+				title.classList.add('title_small')
+				nav.classList.add('nav_small')
+			} else {
+				logo.classList.remove('pure-menu-heading')
+				logo.classList.remove('logo_small')
+				logo.classList.add('logo_card')
+				title.classList.remove('title_small')
+				nav.classList.remove('nav_small')
+			}
+		})
+	</script>
+</body>
+
+</html>

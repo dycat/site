@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./static/css/tailwind.css">
+	<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+	<script src="https://kit.fontawesome.com/546a1ed5cf.js" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-59S6FS0668"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-59S6FS0668');
+	</script>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div class='wrap'>
+		<nav class="nav-bar bg-yellow-300 grid justify-center">
+			<div class="logo-card grid my-6 justify-items-center gap-4">
+				<h1 id="title" class="font-mono text-2xl text-center bg-white w-28 p-1 rounded-2xl"> Logfok</h1>
+				<i class="fa-solid fa-fish text-2xl py-6"></i>
+			</div>
+			<ul class="nav_row nav_row flex md:gap-x-20 py-3 gap-x-5">
+				<li><ion-icon name="home"></ion-icon><a class="nav_item" href="."> Home </a></li>
+				<li><ion-icon name="reader"></ion-icon><a class="nav_item" href="./archives"> Article List </a></li>
+				<li><ion-icon name="albums"></ion-icon><a class="nav_item" href="./pages/projects"> Projects </a></li>
+				<li><ion-icon name="person"></ion-icon><a class="nav_item" href="./pages/about"> About </a></li>
+			</ul>
+		</nav>
+
+		<div class="article-area grid justify-items-center">
+
+<h2 class="article-page-title text-2xl p-6 font-mono font-bold">安身立命记</h2>
+
+<article class="article-page grid justify-items-center">
+	<div class="article_page_meta font-thin text-center p-2">
+		2017 08 01 
+		
+		Review, Chinese_posts
+	</div>
+	<div class="prose article_page_content m-2 md:w-9/12 text-lg font-light text-justify">
+		<p>成人之道，修齐治平也。择业之道，安身立命也。余自硕士卒业，从经济学门，转实业谋生，遂入南航。至今方五日，忧思怅然，夙兴夜寐。此间，白日培训，涉及虽窄，然不离航司首重安全之道。安全在，则护百数人性命于苍穹，则绝千万里于转瞬。安全者，上上之法赖乎管理，得于精益，成于科学；中法严于控制，厉于惩处；下法强于禁止，赖于偏执。所谓取上得中者，偏执也，明知不可为而强为也。成效于一时而难持久。赖此为基，则殆矣。
+培训既毕，倦怠乏力，感怀人性之道。叹职业之始，弃二十年学问于一日，怅然若失。所以，上下求索，左右探问，如浅水摸石，方才始。于是感念：安身立命得乎于此耶？呜呼！乃提笔书。&nbsp;丁酉七月于地勤楼。</p>
+	</div>
+
+	<ul class="article_pres grid grid-cols-2 w-9/12 font-bold= ">
+		<li class="hover:text-blue-500">
+			<a href="./zhi-xie.html">
+				Previous: 致谢
+			</a>
+		</li>
+		<li class="next_article text-right hover:text-blue-500">
+			<a href="./jiang-cheng-zi-shi-yue-er-shi-san-ri-meng-yi.html">
+				Next: 江城子·十月二十三日梦呓
+			</a>
+		</li>
+	</ul>
+</article>
+
+		</div>
+		<footer>
+			<p class="font-extralight text-center py-6" >Copyright @2019-2023 by Ian Powered by Pelican</p>
+		</footer>
+	</div>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134156222-1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-134156222-1');
+	</script>
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', (e) => {
+			let logo = document.getElementById('logo')
+			let title = document.getElementById('title')
+			let nav = document.getElementById('nav')
+			if (window.scrollY > 5) {
+				logo.classList.add('pure-menu-heading')
+				logo.classList.remove('logo_card')
+				logo.classList.add('logo_small')
+				title.classList.add('title_small')
+				nav.classList.add('nav_small')
+			} else {
+				logo.classList.remove('pure-menu-heading')
+				logo.classList.remove('logo_small')
+				logo.classList.add('logo_card')
+				title.classList.remove('title_small')
+				nav.classList.remove('nav_small')
+			}
+		})
+	</script>
+</body>
+
+</html>

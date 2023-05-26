@@ -1,0 +1,152 @@
+.wrap {
+	display: grid;
+	grid-template-areas:
+		"nav"
+		"article-area"
+		"footer";
+}
+
+
+.articles {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+	margin: auto 10px auto 10px;
+}
+
+.nav_row {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (min-width: 500px) {
+	.articles {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+	}
+
+	.nav_row {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 10px;
+	}
+}
+
+.article-area {
+	grid-area: article-area;
+}
+
+
+.nav_small {
+	padding: 1em 0 1em 0;
+}
+
+nav {
+	grid-area: nav;
+	background-color: #FFDE00;
+	color: #7B6C00;
+	text-align: center;
+	margin: 0;
+	padding: 2em 0 2em 0;
+	font-weight: 100;
+	/* position: fixed; */
+	display: flex;
+	top: 0;
+}
+
+.logo_small {
+	background-color: white;
+	padding: 5px;
+	margin: 0 auto;
+	border-radius: 20px;
+	width: 100px;
+	height: 2.5em;
+	line-height: 2.5em;
+	text-align: center;
+}
+
+.logo-card {
+	background-color: white;
+	padding: 5px;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	border-radius: 20px;
+	width: 100px;
+	height: 2.5em;
+	line-height: 2.5em;
+	text-align: center;
+}
+
+
+p h1 h2 footer {
+	color: #000D54;
+}
+
+h1 {
+	font-weight: 400;
+	font-family: sans-serif;
+	margin: 0;
+	display: inline;
+	font-size: 1.7em;
+}
+
+li {
+	list-style-type: none;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.title_small {
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+
+
+.index-column-name {
+	font-size: 1.3em;
+	font-weight: 300;
+	text-align: center;
+}
+
+.article_card {
+	background-color: rgba(252, 250, 239);
+	padding: 0.5em;
+	font-weight: 100;
+	font-size: 1em;
+	text-align: justify;
+}
+
+.article_title {
+	display: block;
+	color: #02157B;
+	font-weight: 200;
+	font-size: 1.1em;
+	text-decoration: none;
+	text-align: left;
+}
+
+footer {
+	grid-area: footer;
+	padding: 5em 0 0.5em 0;
+	font-weight: 50;
+	font-size: 12px;
+	text-align: center;
+	width: 100%;
+	height: 3em;
+}
+
+
+.menu_list {
+	padding-top: 1em;
+}
+
+.nav_item {
+	color: #7B6C00;
+	text-decoration: none;
+	padding: 0.5em;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./static/css/tailwind.css">
+	<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+	<script src="https://kit.fontawesome.com/546a1ed5cf.js" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-59S6FS0668"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-59S6FS0668');
+	</script>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div class='wrap'>
+		<nav class="nav-bar bg-yellow-300 grid justify-center">
+			<div class="logo-card grid my-6 justify-items-center gap-4">
+				<h1 id="title" class="font-mono text-2xl text-center bg-white w-28 p-1 rounded-2xl"> Logfok</h1>
+				<i class="fa-solid fa-fish text-2xl py-6"></i>
+			</div>
+			<ul class="nav_row nav_row flex md:gap-x-20 py-3 gap-x-5">
+				<li><ion-icon name="home"></ion-icon><a class="nav_item" href="."> Home </a></li>
+				<li><ion-icon name="reader"></ion-icon><a class="nav_item" href="./archives"> Article List </a></li>
+				<li><ion-icon name="albums"></ion-icon><a class="nav_item" href="./pages/projects"> Projects </a></li>
+				<li><ion-icon name="person"></ion-icon><a class="nav_item" href="./pages/about"> About </a></li>
+			</ul>
+		</nav>
+
+		<div class="article-area grid justify-items-center">
+
+<h2 class="article-page-title text-2xl p-6 font-mono font-bold">江城子·十月二十三日梦呓</h2>
+
+<article class="article-page grid justify-items-center">
+	<div class="article_page_meta font-thin text-center p-2">
+		2017 10 23 
+		
+		Review, Chinese_posts
+	</div>
+	<div class="prose article_page_content m-2 md:w-9/12 text-lg font-light text-justify">
+		<p>三月工作总忙忙，不眠休，亦难扛。
+十数小时，无处缓痛伤。
+纵使航班接不暇，尘满面，胃绞肠。
+夜里幽梦办票牌，手忙乱，心正慌。
+相顾无言，唯有叹息长。&nbsp;料得日日强记时，脑力竭，心气惘。</p>
+	</div>
+
+	<ul class="article_pres grid grid-cols-2 w-9/12 font-bold= ">
+		<li class="hover:text-blue-500">
+			<a href="./an-shen-li-ming-ji.html">
+				Previous: 安身立命记
+			</a>
+		</li>
+		<li class="next_article text-right hover:text-blue-500">
+			<a href="./a-glance-at-investing-index-funds.html">
+				Next: A glance at investing index&nbsp;funds
+			</a>
+		</li>
+	</ul>
+</article>
+
+		</div>
+		<footer>
+			<p class="font-extralight text-center py-6" >Copyright @2019-2023 by Ian Powered by Pelican</p>
+		</footer>
+	</div>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134156222-1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-134156222-1');
+	</script>
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', (e) => {
+			let logo = document.getElementById('logo')
+			let title = document.getElementById('title')
+			let nav = document.getElementById('nav')
+			if (window.scrollY > 5) {
+				logo.classList.add('pure-menu-heading')
+				logo.classList.remove('logo_card')
+				logo.classList.add('logo_small')
+				title.classList.add('title_small')
+				nav.classList.add('nav_small')
+			} else {
+				logo.classList.remove('pure-menu-heading')
+				logo.classList.remove('logo_small')
+				logo.classList.add('logo_card')
+				title.classList.remove('title_small')
+				nav.classList.remove('nav_small')
+			}
+		})
+	</script>
+</body>
+
+</html>
